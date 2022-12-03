@@ -4,25 +4,32 @@ For manual and reference, please visit https://www.toppic.org/software/toppic/
 
 
 
-File Format Conversion
+### File Format Conversion
 
 
-We use MSConvertGUI to convert the raw files to mzML files.
+<p>We use <em>MSConvertGUI</em> to convert the raw files to mzML files. The filter <br> <em>"Peak Picking vendor msLevel=1-"</em> <br> is selected. The peak picking filter is used to generate centroid, not profile, mzML data files, which are required by the spectral deconvolution tool TopFD.</p>
+ <br>
 
-The filter "Peak Picking vendor msLevel=1-" is selected. The peak picking filter (step 3) is used to generate centroid, not profile, mzML data files, which are required by the spectral deconvolution tool TopFD.
 
+### Mass Spectral Deconvolution
 
-Mass Spectral Deconvolution
-
-We use topfd_gui for top-down mass spectral deconvolution.
+  We use <em>topfd_gui</em> for top-down mass spectral deconvolution.
 
 I do not make any selections at this stage in the process but a few things are preselected. The screenshot of topfd_gui is shown below.
 
-![topfd_screenshot] [topfd_screenshot.png](https://github.com/Shevphil/TopPIC-suite/blob/main/topfd_screenshot.PNG)
+![topfd_screenshot.png](https://github.com/Shevphil/TopPIC-suite/blob/main/topfd_screenshot.PNG)
 
 
-Mass Spectral Identification
+### Mass Spectral Identification
 
-We use toppic_gui to search the MS/MS spectra in msalign files against the protein database to identify PrSMs.
+  We use <em>toppic_gui</em> to search the MS/MS spectra in msalign files against the protein database to identify PrSMs. <br>
+  - *C57 is selected as the fixed modification<br>
+   >C57 is selected as the fixed modification because proteins were reduced with dithiothreitol and alkylated with iodoacetamide before the MS experiment. When proteins are not reduced, no fixed modification should be selected.
+  - *FDR is selected as the spectrum level cutoff type
+   >A shuffled decoy database is concatenated to the target database to estimate spectrum-level and proteoform-level FDRs. All identified PrSMs are first filtered by a 1% spectrum-level FDR and the resulting PrSMs are reported
+  - *FDR is also selected as the proteoform level cutoff type
+   >The proteoforms corresponding to the PrSMs are further filtered using a 1% proteoform-level FDR and the resulting proteoforms and their corresponding best PrSMs are reported
+
+The screenshots of TopPIC gui are shown below.
 
 
