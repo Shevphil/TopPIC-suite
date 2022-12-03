@@ -1,5 +1,6 @@
 # TopPIC: TOP-Down Mass Spectrometry Based Proteoform Identification and Characterization Guide
 For manual and reference, please visit https://www.toppic.org/software/toppic/
+<br>
 
 
 
@@ -19,6 +20,8 @@ I do not make any selections at this stage in the process but a few things are p
 
 ![topfd_screenshot.png](https://github.com/Shevphil/TopPIC-suite/blob/main/topfd_screenshot.PNG)
 
+<br>
+
 
 ### Mass Spectral Identification
 
@@ -32,4 +35,6 @@ I do not make any selections at this stage in the process but a few things are p
 
 The screenshots of TopPIC gui are shown below.
 
+![topPic_screenshot](https://github.com/Shevphil/TopPIC-suite/blob/main/Screen%20Shot%202022-12-03%20at%203.22.35%20PM.png)
+![topPIC_screen](https://github.com/Shevphil/TopPIC-suite/blob/main/Screen%20Shot%202022-12-03%20at%203.22.45%20PM.png)
 
