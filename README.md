@@ -18,7 +18,7 @@ We use topfd_gui for top-down mass spectral deconvolution.
 
 I do not make any selections at this stage in the process but a few things are preselected. The screenshot of topfd_gui is shown below.
 
-![topfd_screenshot] topfd_screenshot.png
+![topfd_screenshot] [topfd_screenshot.png](https://github.com/Shevphil/TopPIC-suite/blob/main/topfd_screenshot.PNG)
 
 
 Mass Spectral Identification
